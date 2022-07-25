@@ -38,7 +38,6 @@ class SpendsDatabaseTest {
 
         val spends = dao.getLast20Spends()
         val spend1 = Spend(Date(), 1480, "My test description")
-//        assertThat(spends.contains(spend1)).isFalse()
         assertThat(spends).contains(spend)
     }
 
